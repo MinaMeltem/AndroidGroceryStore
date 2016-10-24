@@ -8,7 +8,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="220dp"
         android:id="@+id/image_top"
         android:src="@drawable/mel"
         android:background="#000" />
