@@ -1,44 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/image_top"
+        android:src="@drawable/mel"
+        android:background="#000" />
+
+    <ImageView
+        android:id="@+id/bottom_image"
         android:src="@drawable/top"
-        android:scaleType="fitCenter" />
-
-    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/image_top">
+        android:layout_weight="50"
+        android:layout_height="0dp" />
 
-        <ImageView
-        android:id="@+id/right_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-
-        android:src="@drawable/right"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:text="some text"
-            android:layout_alignTop="@+id/right_image"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="34dp"
-            android:layout_marginEnd="34dp" />
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/textview"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="50"
+        android:layout_height="0dp"
+        android:text="@string/mel"
+        android:paddingTop="2dp"/>
 
 
-</RelativeLayout>
+</LinearLayout>
